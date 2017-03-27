@@ -1,0 +1,32 @@
+{
+  "name": "lean-tag",
+  "version": "1.0.0",
+  "description": "Utility for creating HTML elements",
+  "main": "index.js",
+  "keywords": [
+    "hyperscript",
+    "html element"
+  ],
+  "author": "autioch@gmail.com",
+  "license": "ISC",
+  "scripts": {
+    "build": "webpack --config tools/webpack.config.js --hide-modules",
+    "build:watch": "webpack --config tools/webpack.config.js --watch --hide-modules",
+    "lint": "eslint ./index.js --fix --ext .js & exit 0"
+  },
+  "dependencies": {
+    "babel-core": "6.20.0",
+    "babel-loader": "6.2.9",
+    "babel-preset-es2015": "6.18.0",
+    "clean-webpack-plugin": "0.1.14",
+    "extract-text-webpack-plugin": "1.0.1",
+    "html-webpack-plugin": "2.24.1",
+    "webpack": "1.14.0",
+    "webpack-validator": "2.2.12",
+    "webpack-livereload-plugin": "0.9.0"
+  },
+  "devDependencies": {
+    "eslint": "3.17.1",
+    "eslint-config-qb": "1.0.0"
+  }
+}
