@@ -6,6 +6,7 @@ const mixins = [
   require('./input'),
   require('./output'),
   require('./scripts'),
+  require('./templates'),
 
   // This should be after all other parts
   require('./validation')

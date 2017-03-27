@@ -12,6 +12,7 @@
   "scripts": {
     "build": "webpack --config tools/webpack.config.js --hide-modules",
     "build:watch": "webpack --config tools/webpack.config.js --watch --hide-modules",
+    "build:production": "webpack --config tools/webpack.config.js -p --hide-modules",
     "lint": "eslint ./index.js --fix --ext .js & exit 0"
   },
   "devDependencies": {
