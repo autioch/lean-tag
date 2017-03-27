@@ -23,5 +23,5 @@ module.exports = require('./webpack')({
   nameSuffix: new Date().getTime() + (isProduction ? '.min' : ''),
 
   /* Folder where all the assets will be placed in dist */
-  assets: 'files/'
+  assets: ''
 });

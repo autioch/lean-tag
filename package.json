@@ -2,17 +2,27 @@
   "name": "lean-tag",
   "version": "1.0.0",
   "description": "Utility for creating HTML elements",
-  "main": "index.js",
   "keywords": [
     "hyperscript",
     "html element"
   ],
+  "bugs": {
+    "url": "https://github.com/autioch/lean-tag/issues"
+  },
   "author": "autioch@gmail.com",
   "license": "ISC",
+  "main": "dist/lean-tag.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/autioch/lean-tag.git"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
   "scripts": {
-    "build": "webpack --config tools/webpack.config.js --hide-modules",
-    "build:watch": "webpack --config tools/webpack.config.js --watch --hide-modules",
-    "build:production": "webpack --config tools/webpack.config.js -p --hide-modules",
+    "build": "webpack --config tools/webpack.config.lib.js -p --hide-modules",
+    "docs:watch": "webpack --config tools/webpack.config.docs.js --watch --hide-modules",
+    "docs:production": "webpack --config tools/webpack.config.docs.js -p --hide-modules",
     "lint": "eslint ./index.js --fix --ext .js & exit 0"
   },
   "devDependencies": {

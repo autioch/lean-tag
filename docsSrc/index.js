@@ -1,7 +1,7 @@
 const examples = require('./examples');
 const renderExample = require('./renderExample');
 const createStyles = require('./createStyles');
-const tag = require('../index');
+const tag = require('../src/index');
 
 const container = document.body;
 

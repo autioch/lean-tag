@@ -1,4 +1,4 @@
-const tag = require('../index');
+const tag = require('../src/index');
 
 const container = document.head;
 

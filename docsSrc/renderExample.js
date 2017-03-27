@@ -1,4 +1,4 @@
-const tag = require('../index');
+const tag = require('../src/index');
 const getDescription = require('./getDescription');
 
 module.exports = function renderExample({ label, params, desc = getDescription(params) }) {

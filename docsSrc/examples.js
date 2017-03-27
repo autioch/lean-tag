@@ -1,4 +1,4 @@
-const tag = require('../index');
+const tag = require('../src/index');
 
 module.exports = [{
   label: 'No params',
