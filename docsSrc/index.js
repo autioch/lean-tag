@@ -1,28 +1,11 @@
+const { renderStyles } = require('utils');
 const examples = require('./examples');
-const renderExample = require('./renderExample');
-const createStyles = require('./createStyles');
-const tag = require('../src/index');
+const testCases = require('../tests/testCases');
+const itemParse = require('./examples/item/parse');
 
-const container = document.body;
+require('./styles');
+require('./prism');
 
-createStyles();
+renderStyles.flush();
 
-container.appendChild(tag('pre.example__code', [
-  '// ES5 require',
-  '\n',
-  'var tag = require(\'lean-tag\');'
-]));
-container.appendChild(tag('pre.example__code', [
-  '// ES6 require',
-  '\n',
-  'const h = require(\'lean-tag\');'
-]));
-container.appendChild(tag('pre.example__code', [
-  '// ES6 import',
-  '\n',
-  'import dom from \'lean-tag\';'
-]));
-
-examples
-  .map(renderExample)
-  .forEach((example) => container.appendChild(example));
+document.body.appendChild(examples(testCases.map(itemParse)));

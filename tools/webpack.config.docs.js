@@ -2,7 +2,7 @@ const path = require('path');
 const isProduction = process.argv.indexOf('-p') > -1;
 const projectPath = path.join(__dirname, '..');
 
-module.exports = require('./webpack')({
+const config = require('./webpack')({
 
   /* Is development/production build */
   isProduction,
@@ -25,3 +25,8 @@ module.exports = require('./webpack')({
   /* Folder where all the assets will be placed in dist */
   assets: ''
 });
+
+/* TODO alias for this... */
+// config.resolve.alias.leanTag=
+
+module.exports = config;

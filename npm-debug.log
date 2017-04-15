@@ -1,0 +1,37 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'docs:watch' ]
+2 info using npm@3.10.8
+3 info using node@v7.0.0
+4 verbose run-script [ 'predocs:watch', 'docs:watch', 'postdocs:watch' ]
+5 info lifecycle lean-tag@1.0.0~predocs:watch: lean-tag@1.0.0
+6 silly lifecycle lean-tag@1.0.0~predocs:watch: no script for predocs:watch, continuing
+7 info lifecycle lean-tag@1.0.0~docs:watch: lean-tag@1.0.0
+8 verbose lifecycle lean-tag@1.0.0~docs:watch: unsafe-perm in lifecycle true
+9 verbose lifecycle lean-tag@1.0.0~docs:watch: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;F:\repositories\lean-tag\node_modules\.bin;C:\xampp\php;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\GtkSharp\2.12\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files\Git\cmd;F:\repositories\movie-collector\ffmpeg\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\ProgramData\ComposerSetup\bin;C:\Program Files (x86)\Skype\Phone\;C:\Users\Autioch\AppData\Local\atom\bin;C:\Users\Autioch\AppData\Roaming\npm\node_modules;C:\Users\Autioch\AppData\Local\Microsoft\WindowsApps;C:\Users\Autioch\AppData\Roaming\npm;C:\xampp\php;C:\Users\Autioch\AppData\Roaming\Composer\vendor\bin
+10 verbose lifecycle lean-tag@1.0.0~docs:watch: CWD: F:\repositories\lean-tag
+11 silly lifecycle lean-tag@1.0.0~docs:watch: Args: [ '/d /s /c',
+11 silly lifecycle   'webpack --config tools/webpack.config.docs.js --watch --hide-modules' ]
+12 verbose stack Error: kill ENOSYS
+12 verbose stack     at exports._errnoException (util.js:1026:11)
+12 verbose stack     at process.kill (internal/process.js:173:13)
+12 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+12 verbose stack     at emitNone (events.js:91:20)
+12 verbose stack     at process.emit (events.js:185:7)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+12 verbose stack     at Signal.wrap.onsignal (internal/process.js:200:44)
+13 verbose cwd F:\repositories\lean-tag
+14 error Windows_NT 10.0.14393
+15 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "docs:watch"
+16 error node v7.0.0
+17 error npm  v3.10.8
+18 error code ENOSYS
+19 error errno ENOSYS
+20 error syscall kill
+21 error kill ENOSYS
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
